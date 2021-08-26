@@ -3,6 +3,8 @@ import { add } from './calculator.js';
 import { sub } from './calculator.js';
 import { mul } from './calculator.js';
 import { div } from './calculator.js';
+import { mod } from './calculator.js';
+
 
 //additon 
 const addNum1 = document.getElementById('addNum1');
@@ -64,5 +66,20 @@ divButton.addEventListener('click', () => {
 
     const sum = div(num1, num2);
     divAnswer.textContent = sum;
+
+});
+//module 
+const modNum1 = document.getElementById('modNum1');
+const modNum2 = document.getElementById('modNum2');
+const modButton = document.getElementById('modButton');
+const modAnswer = document.getElementById('modAnswer');
+
+modButton.addEventListener('click', () => {
+    const num1 = Number (modNum1.value);
+    const num2 = Number(modNum2.value);
+    
+
+    const sum = mod(num1, num2);
+    modAnswer.textContent = sum;
 
 });
