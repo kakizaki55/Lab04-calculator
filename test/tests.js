@@ -1,25 +1,26 @@
 // IMPORT MODULES under test here:
 // import { add } from '../calculator.js';
-function int(num1, num2){
-    return Math.round(num1 / num2);
-}
+function pyth(sideA, sideB){
+    return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
 
+}
+  
 const test = QUnit.test;
 
 // name your test by what it is testing
 test('check int', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const x = 10;
+    const x = 4;
     const y = 3;
-    const expected = 3;
+    const expected = 5;
 
 
 
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = int(x, y); 
+    const actual = pyth(x, y); 
 
 
 

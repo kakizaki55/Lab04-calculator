@@ -9,6 +9,7 @@ body {
 main {
     padding: 30px;
     background-color: #F0C877;
+    border-radius:;
 }
 
 header {
@@ -38,5 +39,14 @@ footer {
     border: solid 2px black;
     margin:auto;
     padding: 20px;
-    max-width: 430px;
+    max-width: 420px;
+    
+}
+.name-boxes{
+    border: black 2px solid ;
+    background-color: #F2F2D8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+
 }

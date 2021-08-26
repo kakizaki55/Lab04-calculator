@@ -4,6 +4,7 @@ import { sub } from './calculator.js';
 import { mul } from './calculator.js';
 import { div } from './calculator.js';
 import { mod } from './calculator.js';
+import { int } from './calculator.js';
 
 
 //additon 
@@ -81,5 +82,21 @@ modButton.addEventListener('click', () => {
 
     const sum = mod(num1, num2);
     modAnswer.textContent = sum;
+
+});
+
+// interger 
+const intNum1 = document.getElementById('intNum1');
+const intNum2 = document.getElementById('intNum2');
+const intButton = document.getElementById('intButton');
+const intAnswer = document.getElementById('intAnswer');
+
+intButton.addEventListener('click', () => {
+    const num1 = Number (intNum1.value);
+    const num2 = Number(intNum2.value);
+    
+
+    const sum = mod(num1, num2);
+    intAnswer.textContent = sum;
 
 });
