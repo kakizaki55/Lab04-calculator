@@ -8,6 +8,7 @@ body {
 
 main {
     padding: 30px;
+    background-color: #F0C877;
 }
 
 header {
@@ -32,4 +33,10 @@ h1 {
 footer {
     background-color: #FAF0EA;
     padding: 10px;
+}
+.mini-cal{
+    border: solid 2px black;
+    margin:auto;
+    padding: 20px;
+    max-width: 430px;
 }
